@@ -1,0 +1,171 @@
+/* Global view aka Dektop view  */
+
+body{
+    font-family: 'Asap', sans-serif;
+    background-color: #ebebeb; 
+
+
+}
+
+.header-container{
+    background-color: rgb(63, 62, 62);
+    min-height: 100px; 
+    margin-bottom: 40px; 
+    position: fixed;
+    width: 100%; 
+
+}
+
+header {
+    max-width: 1024px;
+    min-height: 100px; 
+    margin: 0 auto; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+
+
+}
+.navbutton{
+    color: white;
+    text-decoration: none;
+    border-style: solid; 
+    border-color: white; 
+    border-width: 1px; 
+    padding: 10px; 
+    margin-left: 20px; 
+ 
+}
+.tags{
+    color: white; 
+
+
+}
+
+.container{   
+    min-height: 500px; 
+    max-width: 1024px; 
+    margin: 0 auto; 
+    display:  flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 150px; 
+    
+}
+
+.hide-desktop-only{
+    display: none; 
+}
+
+
+.col img{
+    width:100%;
+    height: auto; 
+
+}
+
+
+
+.col{
+    background-color: rgb(86, 224, 183);
+    width: 30%;
+    margin-bottom: 40px; 
+ 
+
+}
+
+.col p::first-line{
+    font-weight: bold;
+}
+
+.col p{
+    color: white; 
+    font-size: 0.875rem;
+    padding: 20px 25px; 
+    line-height: 1rem; 
+}
+
+.mob-wrapper {
+    display: none; 
+}
+/* tablet View */
+@media (max-width: 768px){
+
+.col{
+    width: 45%; 
+
+}
+.hide-desktop-only{
+    display: block; 
+}
+
+
+nav a{
+    display: block;
+}
+
+.tags{
+    padding: 40px 0; 
+
+}
+.navbutton {
+    margin-left: 0; 
+}
+
+.header-container{
+    position: relative; 
+
+}
+.container{
+    padding-top: 0; 
+}
+
+nav{
+    display: none; 
+}
+.mob-wrapper{
+    display: block; 
+    padding-right: 30px; 
+}
+
+.mob-nav{
+    display: none; 
+    position: absolute; 
+    padding-top: 10px; 
+}
+
+.mybutton{
+    display: block; 
+    color:white; 
+    background-color: coral; 
+    text-decoration: none;
+    padding: 10px 20px; 
+    margin-left: -60px; 
+    text-align: center; 
+
+}
+.mob-nav :hover{
+    background-color:rgb(86, 224, 183); 
+    transition-duration: 0.5s; 
+}
+
+
+
+}
+
+/* Mobile View */
+@media (max-width: 500px){
+
+.col {
+    width: 100%; 
+}
+
+.hide-mobile{
+    display: none;
+}
+
+
+
+
+ 
+}
